@@ -1,2 +1,2 @@
-# bingo_server
+# bingo-server
 microservice using spring cloud
