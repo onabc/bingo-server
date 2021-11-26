@@ -5,17 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fa782e8-a726-48b1-ac84-50cd957e7110" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bingo-auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/BingoAuthApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-auth/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/BingoGatewayApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/filter/CacheRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/model/LoginVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/service/impl/LoginServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/annotation/Excel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/annotation/Excels.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/CacheConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/GenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/HttpStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/ScheduleConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/SecurityConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/ServiceNameConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/TokenConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/constant/UserConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/context/SecurityContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/domain/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/enums/UserStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/CaptchaException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/CheckedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/DemoModeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/GlobalException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/InnerAuthException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/PreAuthorizeException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/ServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/UtilException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/auth/NotLoginException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/auth/NotPermissionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/auth/NotRoleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/base/BaseException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/file/FileException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/file/FileNameLengthLimitExceededException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/file/FileSizeLimitExceededException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/file/InvalidExtensionException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/job/TaskException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/user/CaptchaExpireException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/user/UserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/exception/user/UserPasswordNotMatchException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/text/CharsetKit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/text/Convert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/text/StrFormatter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/text/UUID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/ExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/IdUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/ReUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/ServletUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/SpringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/StringUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/bean/BeanUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/file/FileTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/file/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/file/ImageUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/file/MimeTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/html/EscapeUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/html/HTMLFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/ip/IpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/poi/ExcelHandlerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/poi/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/reflect/ReflectUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/sign/Base64.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/utils/sql/SqlUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/domain/AjaxResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/domain/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/domain/TreeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/page/PageDomain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/page/TableDataInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/common/core/web/page/TableSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-security/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/BingoAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/BingoAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-auth/src/main/java/com/bingo/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-auth/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-auth/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-auth/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/filter/CacheRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/filter/CacheRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-gateway/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +105,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
   <component name="ProjectId" id="21OQv6jBUVtvMd1wLdPR8dhCTfO" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -44,19 +120,22 @@
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/core" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3256579" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BingoLu\luxio\bingo-server\bingo-common\bingo-common-core\src\main\java\com\bingo\core" />
       <recent name="E:\BingoLu\luxio\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway" />
       <recent name="E:\BingoLu\luxio\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway\filter" />
     </key>
@@ -70,6 +149,9 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.BingoAuthApplication">
+    <configuration name="BingoAuthApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/BingoAuthApplication.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="BingoAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="bingo-auth" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bingo.auth.BingoAuthApplication" />
@@ -90,8 +172,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.BingoAuthApplication" />
+      <item itemvalue="Spring Boot.BingoGatewayApplication" />
+      <item itemvalue="HTTP Request.BingoAuthApplication#1" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.BingoAuthApplication#1" />
         <item itemvalue="Spring Boot.BingoGatewayApplication" />
       </list>
     </recent_temporary>
@@ -104,7 +192,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1637809883039</updated>
-      <workItem from="1637809885075" duration="6305000" />
+      <workItem from="1637809885075" duration="10766000" />
+      <workItem from="1637889046032" duration="3002000" />
+      <workItem from="1637894215860" duration="4494000" />
     </task>
     <servers />
   </component>
@@ -121,5 +211,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

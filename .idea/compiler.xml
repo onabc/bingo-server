@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bingo-common-security" />
         <module name="bingo-auth" />
-        <module name="bingo-common" />
+        <module name="bingo-common-core" />
+        <module name="bingo-common-redis" />
+        <module name="bingo-common-swagger" />
         <module name="bingo-gateway" />
       </profile>
     </annotationProcessing>
