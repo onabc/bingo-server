@@ -2,7 +2,9 @@ package com.bingo.auth.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
@@ -16,13 +18,15 @@ import java.util.Set;
  * @description: TODO
  * @date 2021/11/25 13:50
  */
-@RestController()
-public class AccountController {
+@RestController
+@RequestMapping("auth")
+@RefreshScope
+public class AuthController {
 
     @Value("${spring.redis.host}")
     private String host;
 
-    @GetMapping("auth/login")
+    @GetMapping("login")
     public String login(){
         return host;
     }

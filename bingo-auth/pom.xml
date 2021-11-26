@@ -43,7 +43,10 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-
+        <dependency>
+            <groupId>com.bingo</groupId>
+            <artifactId>bingo-common-security</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

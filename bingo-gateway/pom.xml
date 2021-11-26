@@ -55,6 +55,18 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
+        <!--验证码 -->
+        <dependency>
+            <groupId>com.github.penggle</groupId>
+            <artifactId>kaptcha</artifactId>
+        </dependency>
+
+        <!-- RuoYi Common Redis-->
+        <dependency>
+            <groupId>com.bingo</groupId>
+            <artifactId>bingo-common-redis</artifactId>
+        </dependency>
+
         <!-- Swagger -->
         <dependency>
             <groupId>io.springfox</groupId>

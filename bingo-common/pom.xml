@@ -10,10 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>bingo-common</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
-
+    <packaging>pom</packaging>
+    <modules>
+        <module>bingo-common-redis</module>
+        <module>bingo-common-security</module>
+        <module>bingo-common-core</module>
+        <module>bingo-common-swagger</module>
+    </modules>
 </project>
