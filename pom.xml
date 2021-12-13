@@ -16,6 +16,7 @@
         <module>bingo-gateway</module>
         <module>bingo-auth</module>
         <module>bingo-common</module>
+        <module>bingo-websocket</module>
     </modules>
 
     <properties>
