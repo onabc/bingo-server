@@ -40,7 +40,7 @@ public class NettyServerContainer {
 
     @SuppressWarnings("deprecation")
     @PreDestroy
-    public void close() {
+    public void close() throws InterruptedException {
         logger.info("正在释放Netty Websocket相关连接...");
         webSocketServer.close();
         logger.info("系统关闭！");

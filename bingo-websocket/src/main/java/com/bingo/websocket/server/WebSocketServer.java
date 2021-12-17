@@ -70,8 +70,8 @@ public class WebSocketServer {
         }
     }
 
-    public void close() {
-        serverChannelFuture.channel().close();
+    public void close() throws InterruptedException {
+        serverChannelFuture.channel().closeFuture().sync();
         Future<?> bossGroupFuture = bossGroup.shutdownGracefully();
         Future<?> workerGroupFuture = workerGroup.shutdownGracefully();
 
