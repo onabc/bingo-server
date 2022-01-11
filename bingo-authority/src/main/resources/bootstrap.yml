@@ -1,13 +1,13 @@
 server:
-  port: 8080
+  port: 9001
 
 spring:
-  application:
-    name: bingo-gateway
-  profiles:
-    active: dev
   main:
     allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+  application:
+    name: bingo-auth
   cloud:
     nacos:
       discovery:
@@ -16,8 +16,12 @@ spring:
         namespace: 71024818-31a2-46fd-af0c-a617bc80d34b
       config:
         server-addr: localhost:8848
-        file-extension: yaml
+        file-extension: yml
         group: DEV_GROUP
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
         namespace: 71024818-31a2-46fd-af0c-a617bc80d34b
+
+bingo:
+  project:
+    author: ${NACOS_IP:@project.author@}

@@ -16,7 +16,6 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @description: TODO
  * @date 2021/12/13 16:07
  */
-
 @Component("webSocketServerHandler")
 @Sharable
 public class WebSocketHandler extends SimpleChannelInboundHandler<WebSocketFrame>{

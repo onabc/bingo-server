@@ -11,7 +11,7 @@ spring:
   cloud:
     nacos:
       discovery:
-        server-addr: 192.168.56.1:8848
+        server-addr: localhost:8848
         group: DEV_GROUP
         namespace: 71024818-31a2-46fd-af0c-a617bc80d34b
       config:

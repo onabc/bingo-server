@@ -22,7 +22,6 @@ public class NettyServerContainer {
 
     private final Logger logger = LoggerFactory.getLogger(NettyServerContainer.class);
 
-
     @Autowired
     private WebSocketServer webSocketServer;
 
@@ -36,7 +35,6 @@ public class NettyServerContainer {
     public void init() {
        webSocketServer.init();
     }
-
 
     @SuppressWarnings("deprecation")
     @PreDestroy

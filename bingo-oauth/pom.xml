@@ -9,12 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>bingo-common</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>bingo-common-redis</module>
-        <module>bingo-common-security</module>
-        <module>bingo-common-basic</module>
-        <module>bingo-common-swagger</module>
-    </modules>
+    <artifactId>bingo-oauth</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+
 </project>
