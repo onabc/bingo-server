@@ -1,5 +1,7 @@
 package com.bingo.auth.controller;
 
+import com.bingo.common.basic.enums.ResultCode;
+import com.bingo.common.basic.exception.BizException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
@@ -37,5 +39,10 @@ public class AuthController {
     @GetMapping("test2")
     public String test2(){
         return author;
+    }
+
+    @GetMapping("test3")
+    public String test3() throws BizException {
+        throw new BizException(ResultCode.ACCESS_DENIED);
     }
 }

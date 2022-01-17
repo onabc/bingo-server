@@ -23,7 +23,7 @@
         <!-- RuoYi Common Core-->
         <dependency>
             <groupId>com.bingo</groupId>
-            <artifactId>bingo-common-core</artifactId>
+            <artifactId>bingo-common-basic</artifactId>
         </dependency>
 
     </dependencies>

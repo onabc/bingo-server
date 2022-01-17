@@ -163,12 +163,7 @@
                 <version>${commons.fileupload.version}</version>
             </dependency>
 
-            <!-- 代码生成使用模板 -->
-            <dependency>
-                <groupId>org.apache.velocity</groupId>
-                <artifactId>velocity-engine-core</artifactId>
-                <version>${velocity.version}</version>
-            </dependency>
+
 
             <!-- Collection 增强Java集合框架 -->
             <dependency>
@@ -208,7 +203,7 @@
             <!-- 核心模块 -->
             <dependency>
                 <groupId>com.bingo</groupId>
-                <artifactId>bingo-common-core</artifactId>
+                <artifactId>bingo-common-basic</artifactId>
                 <version>${bingo.version}</version>
             </dependency>
 

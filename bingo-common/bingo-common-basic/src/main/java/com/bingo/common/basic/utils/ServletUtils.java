@@ -20,7 +20,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import com.alibaba.fastjson.JSONObject;
 import com.bingo.common.basic.constant.Constants;
-import com.bingo.common.basic.domain.R;
+import com.bingo.common.basic.domain.ApiResult;
 import com.bingo.common.basic.text.Convert;
 import reactor.core.publisher.Mono;
 
@@ -257,7 +257,7 @@ public class ServletUtils
      */
     public static Mono<Void> webFluxResponseWriter(ServerHttpResponse response, Object value)
     {
-        return webFluxResponseWriter(response, HttpStatus.OK, value, R.FAIL);
+        return webFluxResponseWriter(response, HttpStatus.OK, value, ApiResult.FAIL);
     }
 
     /**
@@ -301,7 +301,7 @@ public class ServletUtils
     {
         response.setStatusCode(status);
         response.getHeaders().add(HttpHeaders.CONTENT_TYPE, contentType);
-        R<?> result = R.fail(code, value.toString());
+        ApiResult<?> result = ApiResult.fail(code, value.toString());
         DataBuffer dataBuffer = response.bufferFactory().wrap(JSONObject.toJSONString(result).getBytes());
         return response.writeWith(Mono.just(dataBuffer));
     }
