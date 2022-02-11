@@ -20,7 +20,7 @@ public class ApiResult<T> implements Serializable
 
     private int code;
 
-    private String msg;
+    private String message;
 
     private T data;
 
@@ -31,7 +31,7 @@ public class ApiResult<T> implements Serializable
 
     public static <T> ApiResult<T> ok(T data)
     {
-        return restResult(data, SUCCESS, null);
+        return restResult(data, SUCCESS, "响应成功");
     }
 
     public static <T> ApiResult<T> ok(T data, String msg)
@@ -54,12 +54,12 @@ public class ApiResult<T> implements Serializable
         return restResult(data, FAIL, null);
     }
 
-    public static <T> ApiResult<T> fail(T data, String msg)
-    {
-        return restResult(data, FAIL, msg);
-    }
+//    public static <T> ApiResult<T> fail(T data, String msg)
+//    {
+//        return restResult(data, FAIL, msg);
+//    }
 
-    public static <T> ApiResult<T> fail(int code, String msg)
+    public static  ApiResult fail(int code, String msg)
     {
         return restResult(null, code, msg);
     }
@@ -69,7 +69,7 @@ public class ApiResult<T> implements Serializable
         ApiResult<T> apiResult = new ApiResult<>();
         apiResult.setCode(code);
         apiResult.setData(data);
-        apiResult.setMsg(msg);
+        apiResult.setMessage(msg);
         return apiResult;
     }
 
@@ -83,14 +83,14 @@ public class ApiResult<T> implements Serializable
         this.code = code;
     }
 
-    public String getMsg()
+    public String getMessage()
     {
-        return msg;
+        return message;
     }
 
-    public void setMsg(String msg)
+    public void setMessage(String message)
     {
-        this.msg = msg;
+        this.message = message;
     }
 
     public T getData()

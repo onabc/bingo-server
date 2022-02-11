@@ -1,2 +1,4 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.bingo.common.basic.handler.GlobalExceptionHandler
+  com.bingo.common.basic.handler.GlobalExceptionHandler,\
+  com.bingo.common.basic.handler.WebConfiguration,\
+  com.bingo.common.basic.handler.ResponseAdvice

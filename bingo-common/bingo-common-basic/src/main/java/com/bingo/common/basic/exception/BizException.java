@@ -16,7 +16,7 @@ import lombok.EqualsAndHashCode;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class BizException extends Exception {
-    private String code;
+    private int code;
 
     private String message;
 
