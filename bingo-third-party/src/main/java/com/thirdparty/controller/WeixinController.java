@@ -2,10 +2,9 @@ package com.thirdparty.controller;
 
 import com.thirdparty.model.*;
 import com.thirdparty.service.WeixinApi;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
-
+import javax.annotation.Resource;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.HashMap;
@@ -16,7 +15,7 @@ import java.util.Optional;
 @RequestMapping("third_party/weixin")
 public class WeixinController {
 
-    @Autowired
+    @Resource
     private WeixinApi weixinApi;
 
     @Value("${weixin.appid}")
@@ -55,17 +54,17 @@ public class WeixinController {
     public void sendMessage(@PathVariable String openid) {
         String accessToken = getAccessToken();
 
-        WeixinMessage wxMsg = new WeixinMessage();
-        wxMsg.setTouser(openid);
-        wxMsg.setTemplate_id("QcK4eWn-arQ462Lzoq2-oTiV9HZHbgCRirTlQKJmNBQ");
-
         SubscribeMsgData subscribeMsgData = SubscribeMsgData.create()
                 .phrase(8, "消息通知")
                 .thing(2, "醉后不知天在水,满船清梦压星河")
                 .name(1, "bingo")
                 .time(3, LocalDateTime.now())
                 .thing(7, "这里是备注呀");
-        wxMsg.setData(subscribeMsgData.data());
+        WeixinMessage wxMsg = WeixinMessage.builder()
+                .touser(openid)
+                .template_id("QcK4eWn-arQ462Lzoq2-oTiV9HZHbgCRirTlQKJmNBQ")
+                .data(subscribeMsgData.data())
+                .build();
 
         WeixinRes res = weixinApi.sendMessage(accessToken, wxMsg);
         System.out.println(res.toString());

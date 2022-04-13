@@ -1,12 +1,14 @@
 package com.thirdparty.model;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
 import java.util.Map;
 
 @Data
-@ToString()
+@ToString
+@Builder
 public class WeixinMessage {
     private String touser;// 用户openId
     private String template_id;// 订阅消息模版id
