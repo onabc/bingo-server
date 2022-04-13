@@ -49,6 +49,12 @@
             <artifactId>sentinel-datasource-nacos</artifactId>
         </dependency>
 
+        <!-- SpringCloud Loadbalancer -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-loadbalancer</artifactId>
+        </dependency>
+
         <!-- SpringBoot Actuator -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -70,6 +76,13 @@
         <dependency>
             <groupId>com.bingo</groupId>
             <artifactId>bingo-common-redis</artifactId>
+            <exclusions>
+
+                <exclusion>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <!-- Swagger -->

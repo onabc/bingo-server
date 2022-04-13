@@ -11,18 +11,28 @@
         <module name="bingo-common-core" />
         <module name="bingo-common-redis" />
         <module name="bingo-common-swagger" />
+        <module name="bingo-authority" />
         <module name="bingo-gateway" />
+        <module name="bingo-common-basic" />
+        <module name="bingo-websocket" />
+        <module name="bingo-third-party" />
+        <module name="bingo-oauth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bingo-auth" target="1.8" />
-      <module name="bingo-common" target="1.8" />
+      <module name="bingo-authority" target="8" />
+      <module name="bingo-common" target="8" />
+      <module name="bingo-common-basic" target="8" />
       <module name="bingo-common-core" target="1.8" />
-      <module name="bingo-common-redis" target="1.8" />
-      <module name="bingo-common-security" target="1.8" />
-      <module name="bingo-common-swagger" target="1.8" />
-      <module name="bingo-gateway" target="1.8" />
-      <module name="bingo-server" target="1.8" />
+      <module name="bingo-common-redis" target="8" />
+      <module name="bingo-common-security" target="8" />
+      <module name="bingo-common-swagger" target="8" />
+      <module name="bingo-gateway" target="8" />
+      <module name="bingo-oauth" target="8" />
+      <module name="bingo-server" target="8" />
+      <module name="bingo-third-party" target="8" />
+      <module name="bingo-websocket" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
