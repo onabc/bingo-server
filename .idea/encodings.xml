@@ -5,6 +5,8 @@
     <file url="file://$PROJECT_DIR$/bingo-authority/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-common/bingo-common-basic/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-common/bingo-common-basic/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bingo-oauth/src/main/java" charset="UTF-8" />

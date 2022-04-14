@@ -17,7 +17,7 @@ spring:
         namespace: dc9143ca-bd41-4c7b-ab7e-02e01ef3903f
       config:
         server-addr: localhost:8848
-        file-extension: yaml
+        file-extension: yml
         group: DEV_GROUP
         shared-configs:
           - application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}

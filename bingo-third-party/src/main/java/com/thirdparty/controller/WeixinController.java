@@ -2,6 +2,10 @@ package com.thirdparty.controller;
 
 import com.thirdparty.model.*;
 import com.thirdparty.service.WeixinApi;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
@@ -12,7 +16,8 @@ import java.util.Map;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("third_party/weixin")
+@RequestMapping("weixin")
+@Api(tags = "微信小程序服务")
 public class WeixinController {
 
     @Resource
@@ -40,8 +45,9 @@ public class WeixinController {
      * @param code
      * @return
      */
+    @ApiOperation(value ="获取openid", httpMethod = "GET" )
     @GetMapping("code/{code}/openid")
-    public WeixinSession getOpenid(@PathVariable String code) {
+    public WeixinSession getOpenid(@ApiParam(name = "code", value = "登录返回code", required = true) @PathVariable String code) {
         Map<String, String> map = new HashMap<>();
         map.put("appid", weixinAppid);
         map.put("secret", weixinSecret);
@@ -50,8 +56,9 @@ public class WeixinController {
         return weixinApi.code2Session(map);
     }
 
+    @ApiOperation(value ="发送微信通知")
     @PostMapping("send/message/openid/{openid}")
-    public void sendMessage(@PathVariable String openid) {
+    public void sendMessage(@ApiParam(name = "openid", value = "用户的微信开放id", required = true) @PathVariable String openid) {
         String accessToken = getAccessToken();
 
         SubscribeMsgData subscribeMsgData = SubscribeMsgData.create()

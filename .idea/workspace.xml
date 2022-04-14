@@ -5,25 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fa782e8-a726-48b1-ac84-50cd957e7110" name="Changes" comment="feat">
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/BingoThirdPartyApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/controller/WeixinController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/model/SubscribeMsgData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/model/WeixinMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/model/WeixinRes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/model/WeixinSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/model/WeixinToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/service/WeixinApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bingo-third-party/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/java/com/bingo/common/swagger/annotation/EnableCustomSwagger2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/java/com/bingo/common/swagger/config/SwaggerAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/java/com/bingo/common/swagger/config/SwaggerBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/java/com/bingo/common/swagger/config/SwaggerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/java/com/bingo/common/swagger/config/SwaggerWebConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/config/SwaggerProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/config/properties/IgnoreWhiteProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/filter/AuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/handler/SwaggerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-authority/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-authority/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/BingoGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/BingoGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-authority/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-authority/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-authority/src/main/java/com/bingo/auth/BingoAuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-authority/src/main/java/com/bingo/auth/BingoAuthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-authority/src/main/java/com/bingo/auth/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-authority/src/main/java/com/bingo/auth/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-authority/src/main/java/com/bingo/auth/controller/CustomErrorController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-common/bingo-common-basic/src/main/java/com/bingo/common/basic/handler/ResponseAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-common/bingo-common-basic/src/main/java/com/bingo/common/basic/handler/ResponseAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-common/bingo-common-swagger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bingo-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bingo-gateway/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-gateway/target/classes/bootstrap.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bingo-third-party/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-third-party/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/filters/config-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/filters/config-dev.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/BingoThirdPartyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/BingoThirdPartyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/controller/WeixinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bingo-third-party/src/main/java/com/thirdparty/controller/WeixinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bingo-common/bingo-common-core/src/main/java/com/bingo/core" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bingo-gateway/src/main/java/com/bingo/gateway/filter" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3256579" />
@@ -75,9 +80,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\BingoLu\luxio\bingo-server\bingo-common\bingo-common-core\src\main\java\com\bingo\core" />
-      <recent name="E:\BingoLu\luxio\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway" />
-      <recent name="E:\BingoLu\luxio\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway\filter" />
+      <recent name="E:\Source Code\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway\filter" />
+      <recent name="E:\Source Code\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway\config" />
+      <recent name="E:\Source Code\bingo-server\bingo-gateway\src\main\java\com\bingo\gateway\handler" />
+      <recent name="E:\Source Code\bingo-server\bingo-common\bingo-common-swagger\src\main\resources" />
+      <recent name="E:\Source Code\bingo-server\bingo-common\bingo-common-swagger\src\main\java\com\bingo\common\swagger\config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,7 +95,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BingoThirdPartyApplication">
+  <component name="RunManager" selected="Spring Boot.BingoAuthApplication">
     <configuration name="BingoAuthApplication#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/BingoAuthApplication.http" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -101,8 +108,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bingo.auth.BingoAuthApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,14 +150,14 @@
     <list>
       <item itemvalue="HTTP Request.BingoAuthApplication#1" />
       <item itemvalue="Spring Boot.WebSocketApplication" />
-      <item itemvalue="Spring Boot.BingoThirdPartyApplication" />
       <item itemvalue="Spring Boot.BingoGatewayApplication" />
+      <item itemvalue="Spring Boot.BingoThirdPartyApplication" />
       <item itemvalue="Spring Boot.BingoAuthApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.BingoThirdPartyApplication" />
         <item itemvalue="Spring Boot.BingoAuthApplication" />
+        <item itemvalue="Spring Boot.BingoThirdPartyApplication" />
         <item itemvalue="Spring Boot.BingoGatewayApplication" />
         <item itemvalue="HTTP Request.BingoAuthApplication#1" />
       </list>
@@ -171,7 +176,9 @@
       <workItem from="1637894215860" duration="4970000" />
       <workItem from="1649748772146" duration="114000" />
       <workItem from="1649748899428" duration="4371000" />
-      <workItem from="1649813016165" duration="15525000" />
+      <workItem from="1649813016165" duration="19129000" />
+      <workItem from="1649900295041" duration="2095000" />
+      <workItem from="1649902469451" duration="16211000" />
     </task>
     <task id="LOCAL-00001" summary="feat">
       <created>1637914428350</created>
@@ -187,7 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1637914490211</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat(third_party):接入部分微信接口">
+      <created>1649840497728</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649840497728</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(third_party):">
+      <created>1649841903416</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649841903416</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,7 +228,25 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat" />
+    <MESSAGE value="feat(third_party):接入部分微信接口" />
+    <MESSAGE value="feat(third_party):" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(third_party):" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bingo-common/bingo-common-basic/src/main/java/com/bingo/common/basic/domain/ApiResult.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.bingo.gateway.config.properties.IgnoreWhiteProperties$$EnhancerBySpringCGLIB$$f8ea5e0e" memberName="whites" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

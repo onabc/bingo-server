@@ -221,6 +221,13 @@
                 <version>${bingo.version}</version>
             </dependency>
 
+            <!-- 接口文档 -->
+            <dependency>
+                <groupId>com.bingo</groupId>
+                <artifactId>bingo-common-swagger</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

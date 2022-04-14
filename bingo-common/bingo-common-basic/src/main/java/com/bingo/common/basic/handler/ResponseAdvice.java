@@ -38,6 +38,11 @@ public class ResponseAdvice implements ResponseBodyAdvice<Object> {
     @SneakyThrows
     @Override
     public Object beforeBodyWrite(Object o, MethodParameter methodParameter, MediaType mediaType, Class<? extends HttpMessageConverter<?>> aClass, ServerHttpRequest serverHttpRequest, ServerHttpResponse serverHttpResponse) {
+
+        String path = serverHttpRequest.getURI().getPath();
+        if(path.contains("api-docs")){
+            return o;
+        }
         if(o instanceof ApiResult){
             return o;
         }

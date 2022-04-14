@@ -47,6 +47,11 @@
             <groupId>com.bingo</groupId>
             <artifactId>bingo-common-security</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.bingo</groupId>
+            <artifactId>bingo-common-swagger</artifactId>
+        </dependency>
     </dependencies>
 
     <build>
